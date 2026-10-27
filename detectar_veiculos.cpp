@@ -24,7 +24,7 @@ const string MODELO_PESOS = "modelos/yolov4-tiny.weights";
 
 // Regioes provisórias: ajuste conforme a imagem do video.
 const Rect FLUXO_A(1000, 500, 920, 350); // Via direita
-const Rect FLUXO_B(580, 0, 450, 350);     // Via superior - tamanho original
+const Rect FLUXO_B(0, 0, 450, 350);       // Via superior - deslocada para a esquerda
 
 const float CONFIANCA_MINIMA = 0.28f;
 const float LIMIAR_NMS = 0.40f;
