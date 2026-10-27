@@ -23,18 +23,18 @@ const string MODELO_CFG = "modelos/yolov4-tiny.cfg";
 const string MODELO_PESOS = "modelos/yolov4-tiny.weights";
 
 // Regioes provisórias: ajuste conforme a imagem do video.
-const Rect FLUXO_A(1100, 550, 820, 250); // Via direita
-const Rect FLUXO_B(580, 0, 450, 350);   // Via superior
+const Rect FLUXO_A(1000, 500, 920, 350); // Via direita - ampliada
+const Rect FLUXO_B(0, 0, 1100, 400);    // Via superior - ampliada para cobrir deteccoes
 
-const float CONFIANCA_MINIMA = 0.30f;
+const float CONFIANCA_MINIMA = 0.28f;
 const float LIMIAR_NMS = 0.40f;
 const int TAMANHO_REDE = 416;
 
 // Rastreamento
-const float DISTANCIA_MAXIMA = 160.0f;
-const int QUADROS_PERDIDOS_MAX = 15;
-const int TAMANHO_HISTORICO = 12;
-const float MOVIMENTO_MAXIMO_PARADO = 18.0f;
+const float DISTANCIA_MAXIMA = 200.0f;
+const int QUADROS_PERDIDOS_MAX = 20;
+const int TAMANHO_HISTORICO = 15;
+const float MOVIMENTO_MAXIMO_PARADO = 24.0f;
 
 // Tempos de simulacao acelerada para demonstracao.
 // Nao utilizar estes valores diretamente em vias reais.
